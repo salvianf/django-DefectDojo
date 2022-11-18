@@ -40,12 +40,13 @@ this IDM is design by considering the object is null/not and the value of start 
 ## Test Values and Example I/O
 
 Criteria Used: **Base Choice Criterion (BCC)** <br/>
-This criteria is choised because there is just one teat value that can give a True and proper output, that is the base test value. The other characteristic/test value are just used to verify the implemented code is running properly.
+This criteria is choised because there is just one teat value that can give a True and proper output, that is the base test value. The other characteristic/test value are just used to verify the implemented code is running properly. <br/>
+Base Test Value : A1B2C3
 
 
 | Test Value | Example Input | Expected Output |
 |------------|---------------|-----------------|
-| A1B2C3     |obj_Id :{ ..., <br /> date: <br /> {start_date: "2021-03-29 00:00:00", <br /> end_date:"2021-04-12 00:00:00"} <br />}      | True, because the object exist and contain start_date and end_date which value of end_date > start_date    |
+| **A1B2C3** |obj_Id :{ ..., <br /> date: <br /> {start_date: "2021-03-29 00:00:00", <br /> end_date:"2021-04-12 00:00:00"} <br />}      | True, because the object exist and contain start_date and end_date which value of end_date > start_date    |
 | A2B2C3     | object == null    | False , because the object not exist      |
 | A1B1C3     | obj_Id :{ ..., <br /> date: <br /> {start_date: null, <br /> end_date:"2021-04-12 00:00:00"} <br />}      | False, because the start_date not exist       |
 | A1B3C3     |obj_Id :{ ..., <br /> date: <br /> {start_date: "2021-05-15 00:00:00", <br /> end_date:"2021-04-12 00:00:00"} <br />}        |False, because the start_date > end_date     |
